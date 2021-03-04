@@ -1,0 +1,95 @@
+*{
+	box-sizing: border-box;
+	font-family: serif;
+}
+
+header{
+	height:100px;
+	background-color:rgba(255, 255, 255, 0.521);
+
+}
+
+.logo{
+	float:left;
+	margin-top: 10px;
+  margin-left:10px;
+}
+
+
+.main-txt {
+	color: rgb(0, 0, 0);
+	text-align: center;
+}
+.btn{
+	float:right;
+	text-decoration: none;
+	line-height: 30px;
+	margin-top: 50px;
+	margin-right: 5px;
+	font-size: 10px;
+	width:90px;
+	border-radius: 7px;
+	color:white;
+}
+
+.btn:hover{
+	opacity:0.6;
+	transition: 1s;
+}
+
+.twitter{
+	background-color: rgb(29, 161, 242);
+}
+
+.instagram{
+	background-color: rgb(207, 46, 146);
+}
+
+.fab{
+	padding:10px
+}
+
+.main-txt{
+	font-family:serif;
+}
+
+.activity{
+	text-align: center;
+	margin-top: 300px;
+}
+
+.activity img {
+	width: 100%;
+}
+
+.form  {
+	text-align: center;
+	background-color: rgb(247, 245, 245);
+}
+
+.form input {
+	width: 50%;
+	height: 30px;
+}
+
+.form textarea {
+	width: 70%;
+	height:150px;
+}
+
+.form p {
+	font-weight: 100;
+	line-height:20px
+}
+
+.company-pic{
+	padding:30px 30%;
+	width:100%;
+
+
+}
+
+.fa-paper-plane{
+	padding-right: 10px;
+}
+
