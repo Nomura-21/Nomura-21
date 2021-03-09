@@ -4,47 +4,43 @@
 	text-decoration: none;
 }
 
-
-
-
-
 /*メニューバー開始*/
 nav{
 	border-bottom: 1px solid #ccc;
 	}
 
-	nav ul{
+nav ul{
 	display: table;
 	margin: 0 auto;
 	padding: 0;
 	width: 80%;
 	text-align: center;
 	}
-	nav ul li{
+nav ul li{
 	display: table-cell;
 	min-width: 50px;
 	border-right: 1px solid #ccc;
 	width: 20%;
 	}
-	nav ul li:first-child{
+nav ul li:first-child{
 	border-left: 1px solid #ccc;
 	}
-	nav ul li a{
+nav ul li a{
 	display: block;
 	width: 100%;
 	padding: 10px 0;
 	text-decoration: none;
 	color: #aaa;
 	}
-	nav ul li a:hover{
+nav ul li a:hover{
 	background-color:#F8E750;
 	border-bottom: 5px solid #F8E750;
 	color: black;
 	}
-	nav ul li.current{
+nav ul li.current{
 	font-weight: bold;
 	}
-	nav ul li.current a{
+nav ul li.current a{
 	border-bottom: 5px solid #00B0F0;
 	color: #00B0F0;
 	}
@@ -57,7 +53,6 @@ header{
 	background-color:rgba(255, 255, 255, 0.521);
 	width:100%;
 	height:110px;
-
 }
 
 .logo{
@@ -69,12 +64,12 @@ header{
 .btn{
 	float:right;
 	line-height: 30px;
-	margin-top: 50px;
-	margin-right: 5px;
 	font-size: 10px;
 	width:90px;
 	border-radius: 7px;
 	color:white;
+	margin-top: 50px;
+	margin-right: 10px;
 }
 
 .btn:hover{
@@ -95,6 +90,7 @@ header{
 }
 /*ヘッダー終了*/
 /*スライド開始*/
+
 /*スライド終了*/
 /*メインテキスト開始*/
 .main-txt {
@@ -115,11 +111,15 @@ header{
 .activity{
 	text-align: center;
 	margin:200px 0 ;
+}
+
+.activity p {
+	margin:0 15％;
 
 }
 
 .activity img {
-	width: 100%;
+	text-align: center;
 }
 /*活動終了*/
 /*お知らせ開始*/
@@ -171,6 +171,18 @@ header{
 }
 
 /*お知らせ終了*/
+/*ご協賛企業開始*/
+.company-pic{
+	padding:30px 30%;
+	width:100%;
+}
+
+.company h2 {
+	text-align: center;
+}
+
+/*ご協賛企業終了*/
+
 /*お問い合わせ開始*/
 .form  {
 	text-align: center;
@@ -194,15 +206,7 @@ header{
 	font-size:16px;
 }
 
-.company-pic{
-	padding:30px 30%;
-	width:100%;
-
-
-}
-
 .fa-paper-plane{
 	padding-right: 10px;
 }
 /*お問い合わせ終了*/
-
