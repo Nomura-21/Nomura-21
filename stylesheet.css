@@ -1,28 +1,73 @@
 *{
 	box-sizing: border-box;
 	font-family: serif;
+	text-decoration: none;
 }
 
+
+
+
+
+/*メニューバー開始*/
+nav{
+	border-bottom: 1px solid #ccc;
+	}
+
+	nav ul{
+	display: table;
+	margin: 0 auto;
+	padding: 0;
+	width: 80%;
+	text-align: center;
+	}
+	nav ul li{
+	display: table-cell;
+	min-width: 50px;
+	border-right: 1px solid #ccc;
+	width: 20%;
+	}
+	nav ul li:first-child{
+	border-left: 1px solid #ccc;
+	}
+	nav ul li a{
+	display: block;
+	width: 100%;
+	padding: 10px 0;
+	text-decoration: none;
+	color: #aaa;
+	}
+	nav ul li a:hover{
+	background-color:#F8E750;
+	border-bottom: 5px solid #F8E750;
+	color: black;
+	}
+	nav ul li.current{
+	font-weight: bold;
+	}
+	nav ul li.current a{
+	border-bottom: 5px solid #00B0F0;
+	color: #00B0F0;
+	}
+
+/*メニューバー終了*/
+
+
+/*ヘッダー開始*/
 header{
-	height:100px;
 	background-color:rgba(255, 255, 255, 0.521);
+	width:100%;
+	height:110px;
 
 }
 
 .logo{
-	float:left;
+	float: left;
 	margin-top: 10px;
-  margin-left:10px;
+  margin-left:60px;
 }
 
-
-.main-txt {
-	color: rgb(0, 0, 0);
-	text-align: center;
-}
 .btn{
 	float:right;
-	text-decoration: none;
 	line-height: 30px;
 	margin-top: 50px;
 	margin-right: 5px;
@@ -45,41 +90,109 @@ header{
 	background-color: rgb(207, 46, 146);
 }
 
-.fab{
-	padding:10px
+.fab {
+	padding:10px;
+}
+/*ヘッダー終了*/
+/*スライド開始*/
+
+/*スライド終了*/
+/*メインテキスト開始*/
+.main-txt {
+	color: rgb(0, 0, 0);
+	text-align: center;
 }
 
-.main-txt{
-	font-family:serif;
+.main-txt h1 {
+	font-size:40px;
 }
 
+.main-txt h3 {
+	color: rgb(148, 146, 146);
+	font-size: 20px;
+}
+/*メインテキスト終了*/
+/*活動開始*/
 .activity{
 	text-align: center;
-	margin-top: 300px;
+	margin:200px 0 ;
+
 }
 
 .activity img {
 	width: 100%;
 }
+/*活動終了*/
+/*お知らせ開始*/
 
+.information{
+	margin-bottom:200px;
+}
+
+.information h2 {
+	text-align: center;
+	margin-top:100px
+}
+
+.news{
+	font-size: 17px;
+}
+
+.news dl{
+ width:100%;
+}
+
+
+.news dt{
+ border-bottom:1px solid #ccc;
+  float:left;
+	padding-top:20px;
+	padding-right: 10px;
+
+
+
+}
+.news dd{
+ border-bottom:1px solid #ccc;
+  margin-left:100px;
+	padding-top:20px;
+
+}
+.news a{
+  background-color:rgb(255, 102, 0);
+  border-radius:5px;
+  color:#fff;
+	margin-left: 10px;
+	padding:0 5px;
+}
+
+.news i {
+	font-size: 15px;
+	padding-right :3px;
+}
+
+/*お知らせ終了*/
+/*お問い合わせ開始*/
 .form  {
 	text-align: center;
 	background-color: rgb(247, 245, 245);
+	height: 500px;
 }
 
 .form input {
 	width: 50%;
-	height: 30px;
+	height: 25px;
 }
 
 .form textarea {
 	width: 70%;
-	height:150px;
+	height:100px;
 }
 
 .form p {
 	font-weight: 100;
-	line-height:20px
+	line-height:20px;
+	font-size:16px;
 }
 
 .company-pic{
@@ -92,4 +205,5 @@ header{
 .fa-paper-plane{
 	padding-right: 10px;
 }
+/*お問い合わせ終了*/
 
