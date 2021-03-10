@@ -9,44 +9,43 @@ nav{
 	border-bottom: 1px solid #ccc;
 	}
 
-nav ul{
+	nav ul{
 	display: table;
 	margin: 0 auto;
 	padding: 0;
 	width: 80%;
 	text-align: center;
 	}
-nav ul li{
+	nav ul li{
 	display: table-cell;
 	min-width: 50px;
 	border-right: 1px solid #ccc;
 	width: 20%;
 	}
-nav ul li:first-child{
+	nav ul li:first-child{
 	border-left: 1px solid #ccc;
 	}
-nav ul li a{
+	nav ul li a{
 	display: block;
 	width: 100%;
 	padding: 10px 0;
 	text-decoration: none;
 	color: #aaa;
 	}
-nav ul li a:hover{
+	nav ul li a:hover{
 	background-color:#F8E750;
 	border-bottom: 5px solid #F8E750;
 	color: black;
 	}
-nav ul li.current{
+	nav ul li.current{
 	font-weight: bold;
 	}
-nav ul li.current a{
+	nav ul li.current a{
 	border-bottom: 5px solid #00B0F0;
 	color: #00B0F0;
 	}
 
 /*メニューバー終了*/
-
 
 /*ヘッダー開始*/
 header{
@@ -54,13 +53,11 @@ header{
 	width:100%;
 	height:110px;
 }
-
 .logo{
 	float: left;
 	margin-top: 10px;
   margin-left:60px;
 }
-
 .btn{
 	float:right;
 	line-height: 30px;
@@ -71,25 +68,24 @@ header{
 	margin-top: 50px;
 	margin-right: 10px;
 }
-
 .btn:hover{
 	opacity:0.6;
 	transition: 1s;
 }
-
 .twitter{
 	background-color: rgb(29, 161, 242);
 }
-
 .instagram{
 	background-color: rgb(207, 46, 146);
 }
-
 .fab {
 	padding:10px;
 }
 /*ヘッダー終了*/
 /*スライド開始*/
+.slider{
+	width: 100%;
+}
 
 /*スライド終了*/
 /*メインテキスト開始*/
@@ -97,11 +93,9 @@ header{
 	color: rgb(0, 0, 0);
 	text-align: center;
 }
-
 .main-txt h1 {
 	font-size:40px;
 }
-
 .main-txt h3 {
 	color: rgb(148, 146, 146);
 	font-size: 20px;
@@ -112,101 +106,135 @@ header{
 	text-align: center;
 	margin:200px 0 ;
 }
-
 .activity p {
 	margin:0 15％;
-
 }
-
 .activity img {
 	text-align: center;
 }
-/*活動終了*/
-/*お知らせ開始*/
 
+.activity-picture{
+	width:100%;
+}
+
+/*活動終了*/
+/*活動報告開始*/
 .information{
 	margin-bottom:200px;
 }
-
 .information h2 {
 	text-align: center;
 	margin-top:100px
 }
-
 .news{
-	font-size: 17px;
+	font-size: 20px;
 }
-
 .news dl{
  width:100%;
 }
-
-
 .news dt{
  border-bottom:1px solid #ccc;
   float:left;
 	padding-top:20px;
 	padding-right: 10px;
-
-
-
+	padding-left: 10px;
 }
 .news dd{
  border-bottom:1px solid #ccc;
   margin-left:100px;
 	padding-top:20px;
-
 }
 .news a{
   background-color:rgb(255, 102, 0);
   border-radius:5px;
-  color:#fff;
-	margin-left: 10px;
+  color:rgb(255, 255, 255);
+	margin-left: 15px;
 	padding:0 5px;
 }
+
+.news a :hover{
+	opacity: 0.6;
+}
+
+
 
 .news i {
 	font-size: 15px;
 	padding-right :3px;
 }
 
-/*お知らせ終了*/
+/*活動報告終了*/
 /*ご協賛企業開始*/
 .company-pic{
 	padding:30px 30%;
 	width:100%;
 }
-
 .company h2 {
 	text-align: center;
 }
-
 /*ご協賛企業終了*/
-
 /*お問い合わせ開始*/
 .form  {
 	text-align: center;
 	background-color: rgb(247, 245, 245);
 	height: 500px;
 }
-
 .form input {
 	width: 50%;
 	height: 25px;
 }
-
 .form textarea {
 	width: 70%;
 	height:100px;
 }
-
 .form p {
 	font-weight: 100;
 	line-height:20px;
 	font-size:16px;
 }
-
 .fa-paper-plane{
 	padding-right: 10px;
 }
 /*お問い合わせ終了*/
+
+/*スマホ用*/
+@media(max-width:480px){
+
+  .logo{
+    margin-left: 0;
+    padding-top: 20px;
+  }
+
+  .btn{
+    margin:20px 0px 30px 5px;
+  }
+
+  .sns{
+    clear:both;
+
+  }
+
+  .sub-txt{
+    font-size: 11px;
+    padding: 0 7%;
+  }
+
+nav{
+  margin-top: 20px;
+}
+
+  .company-pic{
+    padding: 30px 15%;
+  }
+
+  .news{
+    margin: initial;
+    white-space:nowrap;
+    font-size: 17px;
+  }
+
+  .form{
+    height:initial;
+    padding-bottom: 100px;
+  }
+}
